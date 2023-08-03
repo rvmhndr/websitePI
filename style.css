@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aquamarine;
+    background-color: cadetblue;
+}
+
+.container {
+    max-width: 1566px;
+    margin: auto;
+}
+
+nav {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.logo a {
+    align-items: center;
+    font-size: 60px;
+    font-weight: bolder;
+    text-decoration:none;
+    color: darkslateblue;
+}
+
+nav ul li {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li a{
+    font-size: 24px;
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+nav ul li:hover {
+
+    background-color: azure;
+}
+
+nav ul .hide {
+    display: none;
+}
+
+.mainbox{
+    display: flex;
+}
+
+.gruparticle {
+    max-width: 956px;
+    margin: 0;
+}
+
+.gruparticle p{
+    padding: 40px 0;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    flex: 70%;
+}
+
+.content {
+    display: flex;
+    margin: 0px;
+}
+
+.imagebox{
+    flex: 70%;
+    padding: 10px;
+}
+
+.imagemax {
+    max-width: 100%;
+    height: auto;
+}
+
+.textbox {
+    flex: 50%;
+    padding: 10px;
+    color: black;
+}
+
+.textbox h1{
+    font-size: 40px;
+}
+
+.textbox p {
+    font-size: 15px;
+    padding: 20px;
+    color: darkslateblue;
+}
+
+.card { 
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+}
+
+aside{
+    flex: 30%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sidebar {
+    display: flexbox;
+    
+}
+
+.side {
+    flex: 50%;
+}
+
+.profile {
+    flex: 50%;
+    text-align: center;
+}
+
+.profileimage {
+    max-width: 75%;
+    height: auto;
+}
+
+.profile h3 {
+    font-size: 21px;
+    padding: 5px;
+}
+
+.profile h1{
+    font-size: 20px;
+}
+
+.btn {
+
+    background-color: blueviolet;
+    font-size: 17px;
+    border: 2px solid #131418;
+}
+
+.btn:hover {
+    background-color: azure;
+}
+
+.socmed {
+    margin: 10px;
+    border: 2px solid #131418;
+    color: #131418;
+}
+
+.socmed a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #131418;
+}
+
+.socmed:hover {
+    background-color: azure;
+}
+
+.footbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.footbar a {
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 30px;
+    color: #131418;
+}
+
+.footbar a:hover {
+    color: azure;
+}
+
+
+
+#top {
+    display: none;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    color: dodgerblue;
+    background-color: azure;
+    border: 1px solid #131418;
+}
+
+#top:hover {
+    background-color: #131418;
+    color: azure;
+}
+
+@media (max-width: 1024px) {
+    
+    .mainbox,
+    .content,
+    .sidebar {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 640px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 414px) {
+
+    nav ul,
+    nav ul li {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .textbox p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    nav ul,
+    nav ul li {
+        padding: 0;
+        margin: 0;
+    }
+    .footbar a {
+        padding: 10px;
+    }
+
+}
